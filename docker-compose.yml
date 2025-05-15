@@ -1,0 +1,9 @@
+services:
+  face-comparison:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app           # mount your source code
+      - /app/node_modules  # but keep the container’s node_modules intact
+    command: node index.js
