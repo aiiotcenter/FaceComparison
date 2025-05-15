@@ -5,7 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 // define dirname for ESM
 const filename = fileURLToPath(import.meta.url);
-const dirname = path.dirname(filename);
+const __dirname = path.dirname(filename);
 // patch node-canvas into face-api.js
 const { Canvas, Image, ImageData } = canvas;
 faceapi.env.monkeyPatch({ Canvas, Image, ImageData });
