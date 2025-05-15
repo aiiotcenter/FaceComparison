@@ -4,7 +4,7 @@ import { identifyPerson } from "./verifyFace.js";
 import fs from "fs";
 
 const app = express();
-const port = 3000;
+const port = 9833;
 
 // Configure multer for file uploads
 const upload = multer({ dest: "uploads/" });
